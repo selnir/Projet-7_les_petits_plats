@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/scss/custom_style.css" rel=" stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+    />
+    <title>Les petits plats</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="text-center">
+        <img
+          class="navbar-brand"
+          src="/assets/logo_les_petits_plats.jpg"
+          alt="les petits plats"
+        />
+      </header>
+    </div>
+    <div class="container-fluid">
+      <div class="input-group rounded">
+        <input
+          type="search"
+          class="form-control rounded border-0 input-group-text"
+          placeholder="Rechercher une recette"
+          aria-label="Search"
+          aria-describedby="search-addon"
+        />
+        <span class="input-group-text border-0" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+    </div>
+    <div class="dropdown" id="ingredients_menu">
+      <button onclick="myFunction()" class="dropbtn">Ingredient</button>
+      <div id="myDropdown_ingredient" class="dropdown-content">
+        <input
+          type="text"
+          placeholder="Ingredient"
+          id="myInput_ingredient"
+          onkeyup="filterFunction()"
+        />
+      </div>
+    </div>
+
+    <main>
+      <div class="container-fluid text-center">
+        <section class="row row-cols-3"></section>
+      </div>
+    </main>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/js/recipes.js"></script>
+    <script src="/js/factory.js"></script>
+    <script src="/js/select_menu.js"></script>
+
+    <script src="/js/filter_search.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
