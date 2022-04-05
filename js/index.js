@@ -38,7 +38,6 @@ for(let i=0; i<j; i++){
             >&times;</span
           >
         </div>`;
-        document.getElementsByTagName("main").innerHTML="";
         filterTag(actualTag);
 
             document.getElementById("chip-section").innerHTML=taghtml;
