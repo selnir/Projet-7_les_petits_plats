@@ -37,3 +37,14 @@ function recipesFactory(data) {
         return (cardshtml);
     }
     return { getUserCardDOM }}
+
+    function getrecipeshtml(){
+
+
+    const cardnodelist=document.querySelectorAll(".card");
+
+    const cardlist = Array.from(cardnodelist);
+    
+    return cardlist;
+
+    }

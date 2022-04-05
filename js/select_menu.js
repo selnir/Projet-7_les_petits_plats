@@ -1,4 +1,3 @@
-const { Button } = require("bootstrap");
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -40,19 +39,9 @@ function refreshmenu(menu_name){
   const menu_name_items_filtered=menu_name_items.filter((v,i) => menu_name_items.indexOf(v) == i);
 
   menu_name_items_filtered.forEach((menu_name_item)=>{
-    menu_name_items_html=menu_name_items_html+`<button onclick="addtag()">${menu_name_item}</button>`;
+    menu_name_items_html=menu_name_items_html+`<button type="button" class="buttonTag" data-tag="${menu_name_item}">${menu_name_item}</button>`;
   });
 
   return menu_name_items_html;
-
-}
-
-function addtag(){
-
- const taghtml=`<div class="chip">
- John Doe
- <span class="closebtn" onclick="this.parentElement.style.display='none'"
-   >&times;</span
- >`
 
 }
