@@ -4,7 +4,7 @@ function recipesFactory(data) {
       var ingredienthtml='';
         data.ingredients.forEach((ingredients) => {
 
-            ingredienthtml=ingredienthtml+`<li class="list-group-item ingredient">${ingredients.ingredient}</li><p>${ingredients.quantity}${ingredients.unit}</p>
+            ingredienthtml=ingredienthtml+`<li class="list-group-item item-menu">${ingredients.ingredient}</li><p>${ingredients.quantity}${ingredients.unit}</p>
             `
             
         });

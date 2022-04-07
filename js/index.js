@@ -12,8 +12,7 @@ async function displayData(recipes) {
 async function init() {
     
     displayData(recipes);
-    document.getElementById("myDropdown_ingredient").firstElementChild.insertAdjacentHTML("afterend",refreshmenu(".ingredient"));
-    const menu=document.getElementsByClassName("dropdown-content");
+    document.getElementById("myDropdown_ingredient").firstElementChild.insertAdjacentHTML("afterend",refreshmenu(".item-menu"));
 
 const tags = document.querySelectorAll('.buttonTag');
 // je récupère dans le DOM, l'emplacement des tags à selectionner
@@ -28,20 +27,20 @@ for(let i=0; i<j; i++){
           // On récupère la valeur textuelle du tag
           // https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes/data-*
 
-          const actualTag = this.dataset?.tag;
+        const actualTag = this.dataset?.tag;
           // Je récupère dans le DOM le tag selectionné, et récupère son nom exact, grace au data-tag
           
           // Je construis les tags 
-          const taghtml=`<div class="chip">
-          ${actualTag}
-          <span class="closebtn" onclick="this.parentElement.style.display='none'"
-            >&times;</span
-          >
+        const taghtml=`<div class="chip">
+        ${actualTag}
+        <span class="closebtn" onclick="this.parentElement.style.display='none'"
+        >&times;</span>
         </div>`;
         filterTag(actualTag);
 
-            document.getElementById("chip-section").innerHTML=taghtml;
-            document.getElementById("myDropdown_ingredient").classList.toggle("show");
+        document.getElementById("chip-section").insertAdjacentHTML("afterend",taghtml);
+        document.getElementById("myDropdown_ingredient").classList.toggle("show");
+        document.getElementById("myDropdown_ingredient").firstElementChild.innerHTML=refreshmenu(".item-menu");
 
 
      });
