@@ -41,8 +41,6 @@ for(let i=0; i<j; i++){
         document.getElementById("chip-section").insertAdjacentHTML("afterend",taghtml);
         document.getElementById("myDropdown_ingredient").classList.toggle("show");
         document.getElementById("myDropdown_ingredient").firstElementChild.innerHTML=refreshmenu(".item-menu");
-
-
      });
 
 }

@@ -28,9 +28,25 @@ function refreshmenu(menu_name){
   
 
   const menu_name_nodelist=document.querySelectorAll(menu_name);
+  const item_tag_display=new Array();
   const menu_name_list = Array.from(menu_name_nodelist);
   var menu_name_items=new Array(menu_name_list.length);
   var menu_name_items_html=``;
+  const n=0;
+
+  menu_name_nodelist.forEach((item_tag)=>{
+    item_container=item_tag.parentElement.parentElement.parentElement.parentElement;
+    item_tag_comp_display=getComputedStyle(item_container,null).display;
+    // document.getElementById("test").insertAdjacentHTML("afterend",item_tag_comp_display);
+
+    if(item_tag_comp_display!="none"){
+
+      item_tag_display[n+1]=item_tag;
+
+    }
+  });
+  
+
 
   menu_name_list.forEach((menu_name_item,index)=>{
     menu_name_items[index]=menu_name_item.innerText;
