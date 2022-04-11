@@ -10,10 +10,10 @@ function recipesFactory(data) {
         });
         
 
-        cardshtml=`<div class="col id=${data.id}">
+        cardshtml=`<div class="col" id="${data.id}">
         <div class="card">
           <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body" id=${data.id}>
+          <div class="card-body" id="${data.id}">
             <h5 class="card-title">${data.name}</h5>
             <ul class="list-group">
             ${ingredienthtml}

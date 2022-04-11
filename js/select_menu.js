@@ -32,7 +32,7 @@ function refreshmenu(menu_name){
   const menu_name_list = Array.from(menu_name_nodelist);
   var menu_name_items=new Array(menu_name_list.length);
   var menu_name_items_html=``;
-  const n=0;
+  var n=0;
 
   menu_name_nodelist.forEach((item_tag)=>{
     item_container=item_tag.parentElement.parentElement.parentElement.parentElement;
@@ -41,21 +41,28 @@ function refreshmenu(menu_name){
 
     if(item_tag_comp_display!="none"){
 
-      item_tag_display[n+1]=item_tag;
+      
 
+      item_tag_display[n]=item_tag.innerText;
+
+      n=n+1;
     }
   });
   
+  // item_tag_display.forEach((item)=>{
 
+  //   document.getElementById("test").insertAdjacentElement("afterend",item);
 
-  menu_name_list.forEach((menu_name_item,index)=>{
-    menu_name_items[index]=menu_name_item.innerText;
-  });
+  // })
 
-  const menu_name_items_filtered=menu_name_items.filter((v,i) => menu_name_items.indexOf(v) == i);
+  // menu_name_list.forEach((menu_name_item,index)=>{
+  //   menu_name_items[index]=menu_name_item.innerText;
+  // });
+
+  const menu_name_items_filtered=item_tag_display.filter((v,i) => item_tag_display.indexOf(v) == i);
 
   menu_name_items_filtered.forEach((menu_name_item)=>{
-    menu_name_items_html=menu_name_items_html+`<button type="button" class="buttonTag" data-tag="${menu_name_item}">${menu_name_item}</button>`;
+    menu_name_items_html=menu_name_items_html+`<button onclick="taghandle(this.dataset.tag)" type="button" class="buttonTag" data-tag="${menu_name_item}">${menu_name_item}</button>`;
   });
 
   return menu_name_items_html;
