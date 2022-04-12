@@ -30,7 +30,6 @@ function refreshmenu(menu_name){
   const menu_name_nodelist=document.querySelectorAll(menu_name);
   const item_tag_display=new Array();
   const menu_name_list = Array.from(menu_name_nodelist);
-  var menu_name_items=new Array(menu_name_list.length);
   var menu_name_items_html=``;
   var n=0;
 

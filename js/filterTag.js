@@ -1,18 +1,13 @@
 function filterTag(Tagname){
 
     const cards=getrecipeshtml()
-    var hiddencards=new Array();
-    var n=0;
 
     cards.forEach((card)=>{
         if(card.innerText.includes(Tagname)!=true){
             card.parentElement.style.display="none";
-            hiddencards[n]=card.parentElement.getAttribute("id");
-            // document.getElementById("test").insertAdjacentElement("afterend",hiddencards[n]);
-            n=n+1;
         }
     });
-return hiddencards;
+return;
 }
 
 function taghandle(actualTag){
@@ -49,8 +44,16 @@ function taghandle(actualTag){
 
     function erasefilter(closebtn){
 
-
+       const Tagname=closebtn.parentElement.dataset.tag;
         closebtn.parentElement.style.display='none';
-        
+        const cards=getrecipeshtml()
+
+        cards.forEach((card)=>{
+        if(card.innerText.includes(Tagname)!=true){
+            card.parentElement.style.display="block";
+        }
+    });
+    document.getElementById("menu_buttontag").innerHTML=refreshmenu(".item-menu");
+
 
     }
