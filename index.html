@@ -23,11 +23,13 @@
     <div class="container-fluid">
       <div class="input-group rounded">
         <input
+          id="search_recipe"
           type="search"
           class="form-control rounded border-0 input-group-text"
           placeholder="Rechercher une recette"
           aria-label="Search"
           aria-describedby="search-addon"
+          onkeyup="search_recipe()"
         />
         <span class="input-group-text border-0" id="search-addon">
           <i class="fas fa-search"></i>
