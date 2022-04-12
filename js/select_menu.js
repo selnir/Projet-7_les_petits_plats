@@ -67,3 +67,13 @@ function refreshmenu(menu_name){
   return menu_name_items_html;
 
 }
+
+
+// function refreshmenus({
+
+//   document.getElementById("menu_buttontag").innerHTML=refreshmenu(".item-menu");
+
+
+
+
+// })
