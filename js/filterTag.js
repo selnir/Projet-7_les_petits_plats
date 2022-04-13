@@ -10,7 +10,7 @@ function filterTag(Tagname){
 return;
 }
 
-function taghandle(button){
+function taghandle(button,button_parent){
 
            const actualTag=button.dataset.tag;
  
@@ -23,8 +23,7 @@ function taghandle(button){
     
             document.getElementById("chip-section").insertAdjacentHTML("afterend",taghtml);
             refreshmenus();            
-            // document.getElementById("myDropdown_ingredient").classList.toggle("show");
-            toggle_menu(button.parentElement);
+            toggle_menu(button_parent);
     
     }
 
@@ -45,10 +44,9 @@ function taghandle(button){
 
     function toggle_menu(btn_drp){
 
-        // .previousElementSibling.previousElementSibling.getAttribute("id");
 
 
-       const  x=btn_drp;
+       const  x=btn_drp.getAttribute("id");
         switch(x) {
             case "menu_buttontag_ingredient":
                 document.getElementById("myDropdown_ingredient").classList.toggle("show");
@@ -62,7 +60,6 @@ function taghandle(button){
                 break;
 
             default:
-              // code block
           } 
 
 

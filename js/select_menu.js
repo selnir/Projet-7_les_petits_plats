@@ -6,11 +6,11 @@ function myFunction(btn_menu) {
   // document.querySelector(".dropbtn").style.display="none";
 }
 
-function filterFunction() {
+function filterFunction(input) {
   var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput_ingredient");
+  // input = document.getElementById("myInput_ingredient");
   filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown_ingredient");
+  div = document.getElementById(input.parentElement.getAttribute("id"));
   a = div.getElementsByTagName("button");
   for (i = 0; i < a.length; i++) {
     txtValue = a[i].textContent || a[i].innerText;
@@ -61,7 +61,7 @@ function refreshmenu(menu_name){
   const menu_name_items_filtered=item_tag_display.filter((v,i) => item_tag_display.indexOf(v) == i);
 
   menu_name_items_filtered.forEach((menu_name_item)=>{
-    menu_name_items_html=menu_name_items_html+`<button onclick="taghandle(this)" type="button" class="buttonTag" data-tag="${menu_name_item}">${menu_name_item}</button>`;
+    menu_name_items_html=menu_name_items_html+`<button onclick="taghandle(this,this.parentElement)" type="button" class="buttonTag" data-tag="${menu_name_item}">${menu_name_item}</button>`;
   });
 
   return menu_name_items_html;
