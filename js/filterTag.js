@@ -3,7 +3,7 @@ function filterTag(Tagname){
     const cards=getrecipeshtml()
 
     cards.forEach((card)=>{
-        if(card.innerText.includes(Tagname)!=true){
+        if(card.innerHTML.includes(Tagname)!=true){
             card.parentElement.style.display="none";
         }
     });
