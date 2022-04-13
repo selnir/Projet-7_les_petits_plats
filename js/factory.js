@@ -1,10 +1,29 @@
 function recipesFactory(data) {
-    
     function getUserCardDOM() {
       var ingredienthtml='';
+      var unite="";
+      var quantite="";
         data.ingredients.forEach((ingredients) => {
 
-            ingredienthtml=ingredienthtml+`<li class="list-group-item ingredient">${ingredients.ingredient} : ${ingredients.quantity}${ingredients.unit}</li>`
+
+          if(ingredients.unit==undefined){
+
+            unite="";
+
+          }else{
+            unite=ingredients.unit;
+
+          }
+
+          if(ingredients.quantity==undefined){
+
+            quantite="";
+          }else{
+            quantite=ingredients.quantity;
+
+          }
+
+            ingredienthtml=ingredienthtml+`<li class="list-group-item ingredient">${ingredients.ingredient} : ${quantite}${unite}</li>`
             
         });
         data.ustensils.forEach((ustensils)=>{
