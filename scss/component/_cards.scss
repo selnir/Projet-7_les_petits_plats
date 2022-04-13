@@ -1,18 +1,52 @@
 .card img{
 
-    height: 50%;
     border-style: solid;
 }
 .card body{
-height: 50%;
+
+    border-style: solid;
+
 
 }
 .card{
-    width: 100%;
-    height: 364px;
+    border-style: solid;
+
 }
 .ustensile, .appliance{
 
 display: none;
+
+}
+
+
+.list-group-item{
+    border-style: solid;
+
+
+
+
+
+
+}
+.list-group{
+    width: 50%;
+    border-style: solid;
+
+
+}
+
+.card-title{
+
+    width: 100%;
+    text-align: left;
+    border-style: solid;
+
+
+}
+.card-text{
+
+    width: 50%;
+    border-style: solid;
+
 
 }
