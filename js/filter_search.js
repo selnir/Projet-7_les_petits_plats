@@ -12,7 +12,7 @@ function search_recipe(){
             x[i].parentElement.style.display="block";                 
         }
     }
-    document.getElementById("menu_buttontag").innerHTML=refreshmenu(".item-menu");
+    refreshmenus();
 
 }
 

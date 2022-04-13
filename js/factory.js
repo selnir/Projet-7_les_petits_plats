@@ -4,11 +4,18 @@ function recipesFactory(data) {
       var ingredienthtml='';
         data.ingredients.forEach((ingredients) => {
 
-            ingredienthtml=ingredienthtml+`<li class="list-group-item item-menu">${ingredients.ingredient}</li><p>${ingredients.quantity}${ingredients.unit}</p>
-            `
+            ingredienthtml=ingredienthtml+`<li class="list-group-item ingredient">${ingredients.ingredient}</li><p>${ingredients.quantity}${ingredients.unit}</p>`
             
         });
-        
+        data.ustensils.forEach((ustensils)=>{
+
+          ingredienthtml=ingredienthtml+`<li class="list-group-item ustensile">${ustensils}</li>`
+
+
+        });
+        ingredienthtml=ingredienthtml+`<li class="list-group-item appliance">${data.appliance}</li>`
+
+
 
         cardshtml=`<div class="col" id="${data.id}">
         <div class="card">
@@ -17,19 +24,10 @@ function recipesFactory(data) {
             <h5 class="card-title">${data.name}</h5>
             <ul class="list-group">
             ${ingredienthtml}
-
             </ul>
-              ${data.time} min           </p>
-
+              ${data.time} min</p>
               <p class="card-text">
-              ${data.description}            </p>
-
-              <p class="card-text appliance">
-              ${data.appliance}            </p>
-              <p class="card-text ustensil">
-
-              ${data.ustensils}
-            </p>
+              ${data.description}</p>
           </div>
         </div>
       </div>`;

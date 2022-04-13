@@ -41,7 +41,7 @@
 
 
     <div class="dropdown" id="ingredients_menu">
-      <button onclick="myFunction()" class="dropbtn">Ingredient</button>
+      <button onclick="myFunction(this)" class="dropbtn">Ingredients</button>
       <div id="myDropdown_ingredient" class="dropdown-content">
         <input
           type="text"
@@ -49,7 +49,31 @@
           id="myInput_ingredient"
           onkeyup="filterFunction()"
         />
-        <div id="menu_buttontag"></div>
+        <div id="menu_buttontag_ingredient"></div>
+      </div>
+    </div>
+    <div class="dropdown" id="appareils_menu">
+      <button onclick="myFunction(this)" class="dropbtn">Appareils</button>
+      <div id="myDropdown_appareil" class="dropdown-content">
+        <input
+          type="text"
+          placeholder=">Appareil"
+          id="myInput_appareil"
+          onkeyup="filterFunction()"
+        />
+        <div id="menu_buttontag_appareil"></div>
+      </div>
+    </div>
+    <div class="dropdown" id="ustensiles_menu">
+      <button onclick="myFunction(this)" class="dropbtn">Ustensiles</button>
+      <div id="myDropdown_ustensile" class="dropdown-content">
+        <input
+          type="text"
+          placeholder=">Ustensile"
+          id="myInput_ustensile"
+          onkeyup="filterFunction()"
+        />
+        <div id="menu_buttontag_ustensile"></div>
       </div>
     </div>
     <div id="chip-section"></div>

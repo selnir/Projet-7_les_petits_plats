@@ -16,8 +16,7 @@ async function displayData(recipes) {
 async function init() {
     
     displayData(recipes);
-    document.getElementById("menu_buttontag").innerHTML=refreshmenu(".item-menu");
-
+    refreshmenus();
 
 
 };

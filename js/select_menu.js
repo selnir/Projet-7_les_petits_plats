@@ -1,8 +1,8 @@
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown_ingredient").classList.toggle("show");
+function myFunction(btn_menu) {
+  document.getElementById(btn_menu.nextElementSibling.getAttribute("id")).classList.toggle("show");
   // document.querySelector(".dropbtn").style.display="none";
 }
 
@@ -61,7 +61,7 @@ function refreshmenu(menu_name){
   const menu_name_items_filtered=item_tag_display.filter((v,i) => item_tag_display.indexOf(v) == i);
 
   menu_name_items_filtered.forEach((menu_name_item)=>{
-    menu_name_items_html=menu_name_items_html+`<button onclick="taghandle(this.dataset.tag)" type="button" class="buttonTag" data-tag="${menu_name_item}">${menu_name_item}</button>`;
+    menu_name_items_html=menu_name_items_html+`<button onclick="taghandle(this)" type="button" class="buttonTag" data-tag="${menu_name_item}">${menu_name_item}</button>`;
   });
 
   return menu_name_items_html;
@@ -69,11 +69,11 @@ function refreshmenu(menu_name){
 }
 
 
-// function refreshmenus({
+function refreshmenus(){
 
-//   document.getElementById("menu_buttontag").innerHTML=refreshmenu(".item-menu");
+  document.getElementById("menu_buttontag_ingredient").innerHTML=refreshmenu(".ingredient");
+  document.getElementById("menu_buttontag_appareil").innerHTML=refreshmenu(".appliance");
+  document.getElementById("menu_buttontag_ustensile").innerHTML=refreshmenu(".ustensile");
 
 
-
-
-// })
+}

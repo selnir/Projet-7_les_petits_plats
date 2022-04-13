@@ -10,24 +10,10 @@ function filterTag(Tagname){
 return;
 }
 
-function taghandle(actualTag){
-    // const tags = document.querySelectorAll('.buttonTag');
-    // je récupère dans le DOM, l'emplacement des tags à selectionner
-    
-    // const j = tags.length;
-    
-    // for(let i=0; i<j; i++){
-      // je loop au travers chaque tags 
-    
-        //  tags[i].addEventListener("click", function(){
-              // J'écoute l'évènement click sur chaque tag
-              // On récupère la valeur textuelle du tag
-              // https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes/data-*
-    
-            // const actualTag = this.dataset?.tag;
-              // Je récupère dans le DOM le tag selectionné, et récupère son nom exact, grace au data-tag
-              
-              // Je construis les tags 
+function taghandle(button){
+
+           const actualTag=button.dataset.tag;
+ 
             const taghtml=`<div class="chip" data-tag="${actualTag}">
             ${actualTag}
             <span class="closebtn" onclick="erasefilter(this)"
@@ -36,10 +22,10 @@ function taghandle(actualTag){
             filterTag(actualTag);
     
             document.getElementById("chip-section").insertAdjacentHTML("afterend",taghtml);
-            document.getElementById("menu_buttontag").innerHTML=refreshmenu(".item-menu");
-            document.getElementById("myDropdown_ingredient").classList.toggle("show");
-        //  });
-    // }
+            refreshmenus();            
+            // document.getElementById("myDropdown_ingredient").classList.toggle("show");
+            toggle_menu(button.parentElement);
+    
     }
 
     function erasefilter(closebtn){
@@ -53,7 +39,33 @@ function taghandle(actualTag){
             card.parentElement.style.display="block";
         }
     });
-    document.getElementById("menu_buttontag").innerHTML=refreshmenu(".item-menu");
+    refreshmenus();
+
+    }
+
+    function toggle_menu(btn_drp){
+
+        // .previousElementSibling.previousElementSibling.getAttribute("id");
+
+
+       const  x=btn_drp;
+        switch(x) {
+            case "menu_buttontag_ingredient":
+                document.getElementById("myDropdown_ingredient").classList.toggle("show");
+                break;
+            case "menu_buttontag_appareil":
+                document.getElementById("myDropdown_appareil").classList.toggle("show");
+              break;
+
+              case "menu_buttontag_ustensile":
+                document.getElementById("myDropdown_ustensile").classList.toggle("show");
+                break;
+
+            default:
+              // code block
+          } 
+
 
 
     }
+
