@@ -2,9 +2,11 @@
 
 .card{
     background-color: #E7E7E7;
-
-
+    border-style: solid;
+    border-color: black;
 }
+
+
 .ustensile, .appliance{
 
 display: none;
@@ -15,9 +17,6 @@ display: none;
 
 .list-group{
     width: 50%;
-
-
-
 }
 
 .card-title{
@@ -31,7 +30,11 @@ display: none;
 .card-text{
 
     text-align: left;
-
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-style: solid;
+    border-color: purple;
 
 
 
@@ -51,3 +54,25 @@ display: none;
     font-weight: bold;
 
 }
+.col{
+
+border-style: solid;
+border-color: red;
+
+}
+.row{
+
+    border-style: solid;
+    border-color: blue;
+
+
+}
+
+.row-cols-3{
+
+    border-style: solid;
+    border-color: green;
+
+
+}
+

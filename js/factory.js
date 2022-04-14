@@ -47,19 +47,19 @@ function recipesFactory(data) {
 
 
 
-        cardshtml=`<div class="col " id="${data.id}">
+        cardshtml=`<div class="container-fluid" id="${data.id}">
         <div class="card h-100">
           <img src="assets/img.jpg" class="card-img-top h-50" alt="..." />
-          <div class="card-body row row-cols-2 h-50" id="${data.id}">
+          <div class="card-body row row-cols-2 h-50 w-100" id="${data.id}">
             <h5 class="card-title">${data.name}</h5>
             <ul class="list-group">
             ${ingredienthtml}
             </ul>
-              <p class="card-text text-truncate">
+              <p class="card-text">
               ${data.description}</p>
           </div>
         </div>
-      </div>`;
+        </div>`;
 
         return (cardshtml);
     }

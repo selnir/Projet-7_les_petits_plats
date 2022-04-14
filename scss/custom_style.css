@@ -11384,6 +11384,8 @@ header img {
 
 .card {
   background-color: #E7E7E7;
+  border-style: solid;
+  border-color: black;
 }
 
 .ustensile, .appliance {
@@ -11401,6 +11403,11 @@ header img {
 
 .card-text {
   text-align: left;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-style: solid;
+  border-color: purple;
 }
 
 .list-group-item {
@@ -11414,4 +11421,19 @@ header img {
 
 .ingredient {
   font-weight: bold;
+}
+
+.col {
+  border-style: solid;
+  border-color: red;
+}
+
+.row {
+  border-style: solid;
+  border-color: blue;
+}
+
+.row-cols-3 {
+  border-style: solid;
+  border-color: green;
 }/*# sourceMappingURL=custom_style.css.map */
