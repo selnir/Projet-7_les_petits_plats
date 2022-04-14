@@ -3,6 +3,7 @@ function recipesFactory(data) {
       var ingredienthtml='';
       var unite="";
       var quantite="";
+      var point="";
         data.ingredients.forEach((ingredients) => {
 
 
@@ -23,28 +24,38 @@ function recipesFactory(data) {
 
           }
 
-            ingredienthtml=ingredienthtml+`<li class="list-group-item ingredient">${ingredients.ingredient} : ${quantite}${unite}</li>`
+          if(ingredients.quantity==undefined&ingredients.unit==undefined){
+
+            point="";           
+
+
+          }else{
+            point=":"
+
+          }
+
+            ingredienthtml=ingredienthtml+`<li class="list-group-item"><div class="ingredient">${ingredients.ingredient}</div><div>${point}</div><div>${quantite}${unite}</div></li>`
             
         });
         data.ustensils.forEach((ustensils)=>{
 
-          ingredienthtml=ingredienthtml+`<li class="list-group-item ustensile">${ustensils}</li>`
+          ingredienthtml=ingredienthtml+`<div class="ustensile">${ustensils}</div>`
 
 
         });
-        ingredienthtml=ingredienthtml+`<li class="list-group-item appliance">${data.appliance}</li>`
+        ingredienthtml=ingredienthtml+`<div class="appliance">${data.appliance}</div>`
 
 
 
         cardshtml=`<div class="col " id="${data.id}">
-        <div class="card ">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body row row-cols-2" id="${data.id}">
+        <div class="card h-100">
+          <img src="assets/img.jpg" class="card-img-top h-50" alt="..." />
+          <div class="card-body row row-cols-2 h-50" id="${data.id}">
             <h5 class="card-title">${data.name}</h5>
             <ul class="list-group">
             ${ingredienthtml}
             </ul>
-              <p class="card-text">
+              <p class="card-text overflow-hidden">
               ${data.description}</p>
           </div>
         </div>

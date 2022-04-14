@@ -1,15 +1,8 @@
-.card img{
-
-    border-style: solid;
-}
-.card body{
-
-    border-style: solid;
 
 
-}
 .card{
-    border-style: solid;
+    background-color: #E7E7E7;
+
 
 }
 .ustensile, .appliance{
@@ -19,18 +12,10 @@ display: none;
 }
 
 
-.list-group-item{
-    border-style: solid;
 
-
-
-
-
-
-}
 .list-group{
     width: 50%;
-    border-style: solid;
+
 
 
 }
@@ -39,14 +24,30 @@ display: none;
 
     width: 100%;
     text-align: left;
-    border-style: solid;
+
 
 
 }
 .card-text{
 
-    width: 50%;
-    border-style: solid;
+    text-align: left;
 
+
+
+
+}
+.list-group-item{
+
+    display: flex;
+    flex-direction: row;
+    border-style: none;
+    background-color: #E7E7E7;
+    padding:0;
+    text-align: left;
+
+
+}
+.ingredient{
+    font-weight: bold;
 
 }
