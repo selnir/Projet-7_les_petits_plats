@@ -55,7 +55,7 @@ function recipesFactory(data) {
             <ul class="list-group">
             ${ingredienthtml}
             </ul>
-              <p class="card-text overflow-hidden">
+              <p class="card-text text-truncate">
               ${data.description}</p>
           </div>
         </div>
