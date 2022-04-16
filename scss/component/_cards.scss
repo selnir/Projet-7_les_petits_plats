@@ -2,8 +2,7 @@
 
 .card{
     background-color: #E7E7E7;
-    border-style: solid;
-    border-color: black;
+    height: 500px;
 }
 
 
@@ -12,7 +11,6 @@
 display: none;
 
 }
-
 
 
 .list-group{
@@ -27,16 +25,17 @@ display: none;
 
 
 }
+
+
 .card-text{
 
-    text-align: left;
-    white-space: wrap;
+    height: calc(50%);
+
+
     overflow: hidden;
+
+    display: inline-block; /* for inline elements e.g. span, strong, em etc */
     text-overflow: ellipsis;
-    border-style: solid;
-    border-color: purple;
-
-
 
 }
 .list-group-item{
@@ -47,31 +46,15 @@ display: none;
     background-color: #E7E7E7;
     padding:0;
     text-align: left;
-
-
 }
 .ingredient{
     font-weight: bold;
 
 }
-.col{
 
-border-style: solid;
-border-color: red;
+.card-group{
 
-}
-.row{
-
-    border-style: solid;
-    border-color: blue;
-
-
-}
-
-.row-cols-3{
-
-    border-style: solid;
-    border-color: green;
+margin: 50px
 
 
 }
