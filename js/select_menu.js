@@ -3,6 +3,8 @@
 toggle between hiding and showing the dropdown content */
 function myFunction(btn_menu) {
   document.getElementById(btn_menu.nextElementSibling.getAttribute("id")).classList.toggle("show");
+  btn_menu.style.display="none";
+  
 }
 
 function filterFunction(input) {

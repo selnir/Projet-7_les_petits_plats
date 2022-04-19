@@ -45,6 +45,7 @@ function taghandle(button,button_parent){
     function toggle_menu(btn_drp){
 
 
+        btn_drp.parentElement.previousElementSibling.style.display="block";
 
        const  x=btn_drp.getAttribute("id");
         switch(x) {
