@@ -24,6 +24,17 @@
     transform: rotate(45deg);
 
   }
+  .chevron-up::after{
+
+    content: ' ';
+    display: inline-block;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    height:10px;
+    width: 10px;
+    transform: rotate(-135deg);
+
+  }
   
   /* The search field */
   #myInput {
@@ -50,12 +61,24 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f6f6f6;
     min-width: 230px;
     border: 1px solid #ddd;
     z-index: 1;
   }
-  
+  .drp-ing{
+    background-color: #3282F7;
+  }
+  .drp-app{
+
+    background-color: #68D9A4;
+  }
+  .drp-ust{
+    background-color: #ED6454;
+
+
+
+  }
+
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
@@ -77,6 +100,10 @@
     line-height: 50px;
     border-radius: 25px;
     background-color: #f1f1f1;
+  }
+  #chip-section{
+
+    width: 100%;
   }
   
   .chip img {
@@ -132,4 +159,39 @@
   background-color: #ED6454;
 
 
+}
+.buttonTag{
+
+
+background-color: transparent;
+border: none;
+color: white;
+
+
+}
+.search-bar{
+  display: flex;
+}
+#myInput_appareil{
+
+  background-color: transparent;
+  color: white;
+  border-style:none;
+
+
+}
+#myInput_ingredient{
+
+  background-color: transparent;
+  color: white;
+  border-style:none;
+
+
+
+}
+#myInput_ustensile{
+
+  background-color: transparent;
+  color: white;
+  border-style:none;
 }
