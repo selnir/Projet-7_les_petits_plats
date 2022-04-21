@@ -34,7 +34,6 @@ function refreshmenu(menu_name){
   menu_name_nodelist.forEach((item_tag)=>{
     item_container=item_tag.parentElement.parentElement.parentElement.parentElement;
     item_tag_comp_display=getComputedStyle(item_container,null).display;
-    // document.getElementById("test").insertAdjacentHTML("afterend",item_tag_comp_display);
 
     if(item_tag_comp_display!="none"){
 
