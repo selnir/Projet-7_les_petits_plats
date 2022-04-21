@@ -11470,6 +11470,10 @@ header img {
   border-style: none;
 }
 
+.menu-section {
+  display: flex;
+}
+
 .card {
   background-color: #E7E7E7;
   height: 500px;

@@ -40,58 +40,64 @@
 
     <div id="chip-section"></div>
     <div class="menu-section">
-      <div class="dropdown" id="ingredients_menu">
-        <button onclick="myFunction(this)" class="dropbtn btn-ing">
-          Ingredients
-          <div class="chevron-down"></div>
-        </button>
-        <div id="myDropdown_ingredient" class="dropdown-content drp-ing">
-          <div class="search-bar">
-            <input
-              type="text"
-              placeholder="Ingredient"
-              id="myInput_ingredient"
-              onkeyup="filterFunction(this)"
-            />
-            <div class="chevron-up"></div>
+      <div class="menu-container">
+        <div class="dropdown" id="ingredients_menu">
+          <button onclick="myFunction(this)" class="dropbtn btn-ing">
+            Ingredients
+            <div class="chevron-down"></div>
+          </button>
+          <div id="myDropdown_ingredient" class="dropdown-content drp-ing">
+            <div class="search-bar">
+              <input
+                type="text"
+                placeholder="Ingredient"
+                id="myInput_ingredient"
+                onkeyup="filterFunction(this)"
+              />
+              <div class="chevron-up"></div>
+            </div>
+            <div id="menu_buttontag_ingredient" class="row-cols-3"></div>
           </div>
-          <div id="menu_buttontag_ingredient" class="row-cols-3"></div>
         </div>
       </div>
-      <div class="dropdown" id="appareils_menu">
-        <button onclick="myFunction(this)" class="dropbtn btn-app">
-          Appareils
-          <div class="chevron-down"></div>
-        </button>
-        <div id="myDropdown_appareil" class="dropdown-content drp-app">
-          <div class="search-bar" class="row-cols-3">
-            <input
-              type="text"
-              placeholder="Appareil"
-              id="myInput_appareil"
-              onkeyup="filterFunction(this)"
-            />
-            <div class="chevron-up"></div>
+      <div class="menu-container">
+        <div class="dropdown" id="appareils_menu">
+          <button onclick="myFunction(this)" class="dropbtn btn-app">
+            Appareils
+            <div class="chevron-down"></div>
+          </button>
+          <div id="myDropdown_appareil" class="dropdown-content drp-app">
+            <div class="search-bar" class="row-cols-3">
+              <input
+                type="text"
+                placeholder="Appareil"
+                id="myInput_appareil"
+                onkeyup="filterFunction(this)"
+              />
+              <div class="chevron-up"></div>
+            </div>
+            <div id="menu_buttontag_appareil"></div>
           </div>
-          <div id="menu_buttontag_appareil"></div>
         </div>
       </div>
-      <div class="dropdown" id="ustensiles_menu">
-        <button onclick="myFunction(this)" class="dropbtn btn-ust">
-          Ustensiles
-          <div class="chevron-down"></div>
-        </button>
-        <div id="myDropdown_ustensile" class="dropdown-content drp-ust">
-          <div class="search-bar">
-            <input
-              type="text"
-              placeholder="Ustensile"
-              id="myInput_ustensile"
-              onkeyup="filterFunction(this)"
-            />
-            <div class="chevron-up"></div>
+      <div class="menu-container">
+        <div class="dropdown" id="ustensiles_menu">
+          <button onclick="myFunction(this)" class="dropbtn btn-ust">
+            Ustensiles
+            <div class="chevron-down"></div>
+          </button>
+          <div id="myDropdown_ustensile" class="dropdown-content drp-ust">
+            <div class="search-bar">
+              <input
+                type="text"
+                placeholder="Ustensile"
+                id="myInput_ustensile"
+                onkeyup="filterFunction(this)"
+              />
+              <div class="chevron-up"></div>
+            </div>
+            <div id="menu_buttontag_ustensile" class="row-cols-3"></div>
           </div>
-          <div id="menu_buttontag_ustensile" class="row-cols-3"></div>
         </div>
       </div>
     </div>
