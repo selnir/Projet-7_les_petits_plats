@@ -11339,20 +11339,6 @@ header img {
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 230px;
-  border: 1px solid #ddd;
-  z-index: 1;
-}
-
 .drp-ing {
   background-color: #3282F7;
 }
@@ -11365,17 +11351,12 @@ header img {
   background-color: #ED6454;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border: 1px solid #ddd;
+  z-index: 1;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -11430,18 +11411,6 @@ header img {
   background-color: #ED6454;
 }
 
-.myDropdown_ingredient {
-  background-color: #3282F7;
-}
-
-.myInput_appareil {
-  background-color: #68D9A4;
-}
-
-.menu_buttontag_ustensile {
-  background-color: #ED6454;
-}
-
 .buttonTag {
   background-color: transparent;
   border: none;
@@ -11450,6 +11419,7 @@ header img {
 
 .search-bar {
   display: flex;
+  width: 100%;
 }
 
 #myInput_appareil {
@@ -11472,6 +11442,14 @@ header img {
 
 .menu-section {
   display: flex;
+}
+
+.menu_buttontag {
+  -moz-column-width: 150px;
+       column-width: 150px;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  height: 70vh;
 }
 
 .card {

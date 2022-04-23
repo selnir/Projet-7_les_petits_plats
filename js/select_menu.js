@@ -10,7 +10,7 @@ function myFunction(btn_menu) {
 function filterFunction(input) {
   var input, filter, ul, li, a, i;
   filter = input.value.toUpperCase();
-  div = document.getElementById(input.parentElement.getAttribute("id"));
+  div = document.getElementById(input.parentElement.parentElement.getAttribute("id"));
   a = div.getElementsByTagName("button");
   for (i = 0; i < a.length; i++) {
     txtValue = a[i].textContent || a[i].innerText;
