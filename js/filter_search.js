@@ -5,7 +5,7 @@ function search_recipe(){
     let x = document.getElementsByClassName('card');
       
     for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        if (!x[i].textContent.toLowerCase().includes(input)) {
             x[i].style.display="none";
         }
         else {
