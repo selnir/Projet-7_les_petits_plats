@@ -11298,7 +11298,6 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 20px;
 }
 
 .chevron-down::after {
@@ -11354,7 +11353,7 @@ header img {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   border: 1px solid #ddd;
   z-index: 1;
 }
@@ -11419,6 +11418,9 @@ header img {
 
 .search-bar {
   display: flex;
+  justify-content: space-between;
+}
+.search-bar input {
   width: 100%;
 }
 
@@ -11444,12 +11446,9 @@ header img {
   display: flex;
 }
 
-.menu_buttontag {
-  -moz-column-width: 150px;
-       column-width: 150px;
-  -moz-column-fill: balance;
-       column-fill: balance;
-  height: 70vh;
+.menu_buttontag button {
+  text-align: left;
+  width: 150px;
 }
 
 .card {

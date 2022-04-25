@@ -11,7 +11,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 20px;
   }
   .chevron-down::after{
 
@@ -70,7 +69,7 @@
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     border: 1px solid #ddd;
     z-index: 1;
 
@@ -142,7 +141,11 @@ color: white;
 }
 .search-bar{
   display: flex;
-width: 100%;
+  justify-content: space-between;
+input{
+
+  width: 100%;
+}
 }
 #myInput_appareil{
 
@@ -167,8 +170,15 @@ width: 100%;
 }
 .menu_buttontag{
 // max-width: 100%;
-column-width: 150px;
-column-fill: balance;
-height: 70vh;
-
+// column-width: 50px;
+// column-fill: balance;
+// height: 70vh;
+// column-gap: 50px;
+// display: flex;
+// flex-direction: column;
+// flex-wrap: wrap;
+button{
+  text-align: left;
+  width: 150px;
+}
 }
