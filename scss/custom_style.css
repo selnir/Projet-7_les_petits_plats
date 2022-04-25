@@ -11281,6 +11281,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+#recipe_section {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card-group {
+  width: 100%;
+  justify-content: space-between;
+}
+
+body {
+  margin: 100px;
+}
+
 header img {
   height: 93px;
 }
@@ -11338,6 +11352,12 @@ header img {
 }
 
 /* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  max-width: 50%;
+}
+
 .drp-ing {
   background-color: #3282F7;
 }
@@ -11355,7 +11375,8 @@ header img {
   display: none;
   position: relative;
   border: 1px solid #ddd;
-  z-index: 1;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -11420,9 +11441,6 @@ header img {
   display: flex;
   justify-content: space-between;
 }
-.search-bar input {
-  width: 100%;
-}
 
 #myInput_appareil {
   background-color: transparent;
@@ -11444,16 +11462,37 @@ header img {
 
 .menu-section {
   display: flex;
+  position: absolute;
+  z-index: 1;
+  margin-top: 25px;
 }
 
+.menu_buttontag {
+  padding: 15px;
+}
 .menu_buttontag button {
   text-align: left;
-  width: 150px;
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.mask-section {
+  margin-top: 50px;
+  width: 100%;
+  height: 70px;
+}
+
+.input-group {
+  margin: 0;
+  padding: 0;
 }
 
 .card {
   background-color: #E7E7E7;
   height: 500px;
+  width: 500px;
+  margin-top: 100px;
+  padding: 0%;
 }
 
 .ustensile, .appliance {
@@ -11488,8 +11527,4 @@ header img {
 
 .ingredient {
   font-weight: bold;
-}
-
-.card-group {
-  margin: 50px;
 }/*# sourceMappingURL=custom_style.css.map */
