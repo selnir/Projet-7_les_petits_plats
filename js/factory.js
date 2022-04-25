@@ -39,11 +39,11 @@ function recipesFactory(data) {
         });
         data.ustensils.forEach((ustensils)=>{
 
-          ingredienthtml=ingredienthtml+`<div class="ustensile">${ustensils}</div>`
+          ingredienthtml=ingredienthtml+`<li class="list-group-item"><div class="ustensile">${ustensils}</div></li>`
 
 
         });
-        ingredienthtml=ingredienthtml+`<div class="appliance">${data.appliance}</div>`
+        ingredienthtml=ingredienthtml+`<li class="list-group-item"><div class="appliance">${data.appliance}</div>/li>`
 
 
 
