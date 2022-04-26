@@ -22,8 +22,9 @@ display: none;
 
 .card-title{
 
-    width: 100%;
     text-align: left;
+    width: auto;
+    width: 80%;
 
 
 
@@ -43,5 +44,10 @@ display: none;
 
 }
 
+.header-card{
+display: flex;
+}
 
-
+.time{
+    font-weight: bold;
+}

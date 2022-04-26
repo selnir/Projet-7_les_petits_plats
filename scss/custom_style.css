@@ -11394,6 +11394,7 @@ header img {
   border-radius: 5px;
   background-color: #f1f1f1;
   color: white;
+  margin-right: 25px;
 }
 
 .blue {
@@ -11410,7 +11411,6 @@ header img {
 
 #chip-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-top: 25px;
@@ -11495,7 +11495,6 @@ header img {
 }
 
 .mask-section {
-  margin-top: 50px;
   width: 100%;
   height: 70px;
 }
@@ -11522,8 +11521,9 @@ header img {
 }
 
 .card-title {
-  width: 100%;
   text-align: left;
+  width: auto;
+  width: 80%;
 }
 
 .list-group-item {
@@ -11536,6 +11536,14 @@ header img {
 }
 
 .ingredient {
+  font-weight: bold;
+}
+
+.header-card {
+  display: flex;
+}
+
+.time {
   font-weight: bold;
 }
 
