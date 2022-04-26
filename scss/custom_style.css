@@ -11312,6 +11312,7 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 25px;
 }
 
 .chevron-down::after {
@@ -11390,12 +11391,29 @@ header img {
   height: 50px;
   font-size: 16px;
   line-height: 50px;
-  border-radius: 25px;
+  border-radius: 5px;
   background-color: #f1f1f1;
+  color: white;
+}
+
+.blue {
+  background-color: #3282F7;
+}
+
+.green {
+  background-color: #68D9A4;
+}
+
+.red {
+  background-color: #ED6454;
 }
 
 #chip-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  margin-top: 25px;
 }
 
 .chip img {
@@ -11408,7 +11426,7 @@ header img {
 
 .closebtn {
   padding-left: 10px;
-  color: #888;
+  color: white;
   font-weight: bold;
   float: right;
   font-size: 20px;
@@ -11519,4 +11537,15 @@ header img {
 
 .ingredient {
   font-weight: bold;
+}
+
+.input-group {
+  width: 100%;
+  padding: 0%;
+  margin-top: 25px;
+  height: 70px;
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  padding: 0%;
 }/*# sourceMappingURL=custom_style.css.map */

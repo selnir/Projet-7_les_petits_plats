@@ -11,17 +11,31 @@ return;
 }
 
 function taghandle(button,button_parent){
-
+            var datacolor="";
            const actualTag=button.dataset.tag;
+           switch(button_parent.id) {
+            case "menu_buttontag_ingredient":
+                 datacolor="blue";
+                break;
+            case "menu_buttontag_appareil":
+                datacolor="green";
+                break;
+
+              case "menu_buttontag_ustensile":
+                datacolor="red";
+                break;
+
+            default:
+          } 
  
-            const taghtml=`<div class="chip" data-tag="${actualTag}">
+            const taghtml=`<div class="chip ${datacolor}" data-tag="${actualTag}">
             ${actualTag}
             <span class="closebtn" onclick="erasefilter(this)"
             >&times;</span>
             </div>`;
             filterTag(actualTag);
     
-            document.getElementById("chip-section").insertAdjacentHTML("afterend",taghtml);
+            document.getElementById("chip-section").insertAdjacentHTML("afterbegin",taghtml);
             refreshmenus();            
             toggle_menu(button_parent);
     
@@ -31,6 +45,8 @@ function taghandle(button,button_parent){
 
        const Tagname=closebtn.parentElement.dataset.tag;
         closebtn.parentElement.style.display='none';
+        const chip_section=closebtn.parentElement.parentElement;
+
         const cards=getrecipeshtml()
 
         cards.forEach((card)=>{
