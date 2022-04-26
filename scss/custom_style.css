@@ -11499,16 +11499,11 @@ header img {
   height: 70px;
 }
 
-.input-group {
-  margin: 0;
-  padding: 0;
-}
-
 .card {
   background-color: #E7E7E7;
   height: 500px;
   width: 500px;
-  margin-top: 100px;
+  margin-top: 75px;
   padding: 0%;
 }
 
