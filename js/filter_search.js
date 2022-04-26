@@ -6,10 +6,10 @@ function search_recipe(){
       
     for (i = 0; i < x.length; i++) { 
         if (!x[i].textContent.toLowerCase().includes(input)) {
-            x[i].style.display="none";
+            x[i].parentElement.style.display="none";
         }
         else {
-            x[i].style.display="block";                 
+            x[i].parentElement.style.display="block";                 
         }
     }
     refreshmenus();
