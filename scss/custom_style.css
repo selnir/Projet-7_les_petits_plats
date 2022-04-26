@@ -11504,7 +11504,11 @@ header img {
   height: 500px;
   width: 500px;
   margin-top: 75px;
-  padding: 0%;
+}
+
+.card-body {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .ustensile, .appliance {
@@ -11517,8 +11521,8 @@ header img {
 
 .card-title {
   text-align: left;
-  width: auto;
   width: 80%;
+  height: 100%;
 }
 
 .list-group-item {
@@ -11536,10 +11540,19 @@ header img {
 
 .header-card {
   display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .time {
   font-weight: bold;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
 }
 
 .input-group {
