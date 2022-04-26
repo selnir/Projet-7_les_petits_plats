@@ -36,7 +36,8 @@ function taghandle(button,button_parent){
             filterTag(actualTag);
     
             document.getElementById("chip-section").insertAdjacentHTML("afterbegin",taghtml);
-            refreshmenus();            
+            refreshmenus();
+            button_parent.parentElement.parentElement.firstElementChild.style.display="flex";
             toggle_menu(button_parent);
     
     }

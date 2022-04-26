@@ -11357,6 +11357,7 @@ header img {
   position: relative;
   display: inline-block;
   max-width: 50%;
+  margin-right: 25px;
 }
 
 .drp-ing {
@@ -11375,7 +11376,6 @@ header img {
 .dropdown-content {
   display: none;
   position: relative;
-  border: 1px solid #ddd;
   padding: 15px;
   border-radius: 5px;
 }

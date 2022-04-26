@@ -56,6 +56,7 @@
     position: relative;
     display: inline-block;
     max-width:  50%;
+    margin-right: 25px;
   }
   .drp-ing{
     background-color: #3282F7;
@@ -72,7 +73,6 @@
   .dropdown-content {
     display: none;
     position: relative;
-    border: 1px solid #ddd;
     // z-index: 1;
     padding:15px;
     border-radius: 5px;
