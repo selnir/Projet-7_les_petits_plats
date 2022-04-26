@@ -43,9 +43,9 @@ function recipesFactory(data) {
 
 
         });
-        ingredienthtml=ingredienthtml+`<li class="list-group-item"><div class="appliance">${data.appliance}</div>/li>`
+        ingredienthtml=ingredienthtml+`<li class="list-group-item"><div class="appliance">${data.appliance}</div></li>`
 
-
+        
 
         cardshtml=`<div id="${data.id}">
         <div class="card">
@@ -56,7 +56,7 @@ function recipesFactory(data) {
             ${ingredienthtml}
             </ul>
               <p class="card-text ">
-              ${data.description}</p>
+              ${data.description.substring(0,147)}...</p>
           </div>
         </div>
         </div>`;

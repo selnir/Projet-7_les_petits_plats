@@ -29,18 +29,6 @@ display: none;
 
 }
 
-
-.card-text{
-
-    height: calc(50%);
-
-
-    overflow: hidden;
-
-    display: inline-block; /* for inline elements e.g. span, strong, em etc */
-    text-overflow: ellipsis;
-
-}
 .list-group-item{
 
     display: flex;
