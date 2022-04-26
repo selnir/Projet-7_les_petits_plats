@@ -31,7 +31,7 @@ function taghandle(button,button_parent){
             const taghtml=`<div class="chip ${datacolor}" data-tag="${actualTag}">
             ${actualTag}
             <span class="closebtn" onclick="erasefilter(this)"
-            >&times;</span>
+            ><i class="far fa-times-circle"></i></span>
             </div>`;
             filterTag(actualTag);
     

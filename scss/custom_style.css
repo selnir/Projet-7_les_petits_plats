@@ -11416,14 +11416,6 @@ header img {
   margin-top: 25px;
 }
 
-.chip img {
-  float: left;
-  margin: 0 10px 0 -25px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-
 .closebtn {
   padding-left: 10px;
   color: white;
