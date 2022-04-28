@@ -5,48 +5,27 @@ function recipesFactory(data) {
       var quantite="";
       var point="";
         data.ingredients.forEach((ingredients) => {
-
-
           if(ingredients.unit==undefined){
-
             unite="";
-
           }else{
             unite=ingredients.unit;
-
           }
-
           if(ingredients.quantity==undefined){
-
             quantite="";
           }else{
             quantite=ingredients.quantity;
-
           }
-
           if(ingredients.quantity==undefined&ingredients.unit==undefined){
-
             point="";           
-
-
           }else{
             point=":"
-
           }
-
             ingredienthtml=ingredienthtml+`<li class="list-group-item"><div class="ingredient">${ingredients.ingredient}</div><div>${point}</div><div>${quantite}${unite}</div></li>`
-            
         });
         data.ustensils.forEach((ustensils)=>{
-
           ingredienthtml=ingredienthtml+`<li class="list-group-item"><div class="ustensile">${ustensils}</div></li>`
-
-
         });
         ingredienthtml=ingredienthtml+`<li class="list-group-item"><div class="appliance">${data.appliance}</div></li>`
-
-        
-
         cardshtml=`<div id="${data.id}">
         <div class="card">
           <img src="assets/img.jpg" class="card-img-top h-50" alt="..." />
