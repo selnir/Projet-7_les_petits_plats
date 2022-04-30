@@ -3,9 +3,16 @@
 .card{
     background-color: #E7E7E7;
     height: 500px;
+    width: 500px;
+    margin-top: 75px;    
 }
 
+.card-body{
+    margin-left: 10px;
+    margin-right: 10px;
 
+
+}
 .ustensile, .appliance{
 
 display: none;
@@ -19,25 +26,11 @@ display: none;
 
 .card-title{
 
-    width: 100%;
     text-align: left;
-
-
-
+    width: 80%;
+    height: 100%;
 }
 
-
-.card-text{
-
-    height: calc(50%);
-
-
-    overflow: hidden;
-
-    display: inline-block; /* for inline elements e.g. span, strong, em etc */
-    text-overflow: ellipsis;
-
-}
 .list-group-item{
 
     display: flex;
@@ -52,10 +45,22 @@ display: none;
 
 }
 
-.card-group{
-
-margin: 50px
+.header-card{
+display: flex;
+margin-left: 20px;
+margin-top: 20px;
+margin-right: 20px;
 
 
 }
 
+.time{
+    font-weight: bold;
+    width:20% ;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+
+}

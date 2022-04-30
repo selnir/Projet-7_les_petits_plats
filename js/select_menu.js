@@ -3,7 +3,7 @@
 toggle between hiding and showing the dropdown content */
 function myFunction(btn_menu) {
   document.getElementById(btn_menu.nextElementSibling.getAttribute("id")).classList.toggle("show");
-  btn_menu.style.visbility="hidden";
+  btn_menu.style.display="none";
   
 }
 
@@ -32,7 +32,7 @@ function refreshmenu(menu_name){
   var n=0;
 
   menu_name_nodelist.forEach((item_tag)=>{
-    item_container=item_tag.parentElement.parentElement.parentElement.parentElement;
+    item_container=item_tag.parentElement.parentElement.parentElement.parentElement.parentElement;
     item_tag_comp_display=getComputedStyle(item_container,null).display;
 
     if(item_tag_comp_display!="none"){
