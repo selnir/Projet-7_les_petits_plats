@@ -22,7 +22,7 @@ function filterFunction(input) {
   }
 } 
 
-
+//permet de mettre a jour les bouton d'un menu apres selection d'un tag
 function refreshmenu(menu_name){
   
   const menu_name_nodelist=document.querySelectorAll(menu_name);
@@ -55,7 +55,7 @@ function refreshmenu(menu_name){
 
 }
 
-
+//permet la mise a jour de tous les menu apres selection d'un tag.
 function refreshmenus(){
 
   document.getElementById("menu_buttontag_ingredient").innerHTML=refreshmenu(".ingredient");

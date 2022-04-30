@@ -1,9 +1,15 @@
+//factory pattern pour generation des cards de recette
+
+
 function recipesFactory(data) {
     function getUserCardDOM() {
       var ingredienthtml='';
       var unite="";
       var quantite="";
       var point="";
+
+
+      //generation de la liste d'ingredient modification de l'affichage des ingredients et quantites si il y une presence de quantite ou pas,
         data.ingredients.forEach((ingredients) => {
           if(ingredients.unit==undefined){
             unite="";

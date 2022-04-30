@@ -1,5 +1,5 @@
 
-
+//affichage des cards dans la page html.
 async function displayData(recipes) {
     const RecipeSection = document.querySelector("section");
 

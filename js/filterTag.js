@@ -1,3 +1,5 @@
+// function des filtres selon tag selectionnes.
+
 function filterTag(Tagname){
 
     const cards=getrecipeshtml()
@@ -10,7 +12,12 @@ function filterTag(Tagname){
 return;
 }
 
+
+//insertion du tag dans page html
+
 function taghandle(button,button_parent){
+
+        //gestion de la couleur du tag
             var datacolor="";
            const actualTag=button.dataset.tag;
            switch(button_parent.id) {
@@ -42,6 +49,8 @@ function taghandle(button,button_parent){
     
     }
 
+    //affichage des elements filtrer lors des suppressions d'un tag.
+    
     function erasefilter(closebtn){
 
        const Tagname=closebtn.parentElement.dataset.tag;
@@ -58,6 +67,8 @@ function taghandle(button,button_parent){
     refreshmenus();
 
     }
+
+    //fonction d'affichage du menu selon le type de menu ingredient appareil ustensile.
 
     function toggle_menu(btn_drp){
 
